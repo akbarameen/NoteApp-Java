@@ -22,7 +22,7 @@ public class NoteRepo {
     }
 
     private static class InsertTask extends AsyncTask<Note, Void, Void>{
-        private NoteDao noteDao;
+        private final NoteDao noteDao;
         public InsertTask(NoteDao noteDao) {
             this.noteDao = noteDao;
         }

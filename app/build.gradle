@@ -5,7 +5,9 @@ plugins {
 android {
     namespace 'com.example.note_app'
     compileSdk 33
-
+    buildFeatures{
+        viewBinding  true
+    }
     defaultConfig {
         applicationId "com.example.note_app"
         minSdk 24
@@ -30,7 +32,6 @@ android {
 
 dependencies {
     def lifecycle_version = "2.6.1"
-    def arch_version = "2.2.0"
     def room_version = "2.5.2"
 
 
@@ -54,4 +55,7 @@ dependencies {
 
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
+}
+configurations.implementation {
+    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
 }

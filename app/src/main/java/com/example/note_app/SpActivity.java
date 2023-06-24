@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 public class SpActivity extends AppCompatActivity {
-int SPLASH_TIMER =300;
+int SPLASH_TIMER =5000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

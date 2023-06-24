@@ -7,12 +7,12 @@ import androidx.room.PrimaryKey;
 public class Note {
     @PrimaryKey(autoGenerate = true)
     private int id;
-    private String Title;
-    private String Desc;
+    private String title;
+    private String desc;
 
     public Note(String title, String desc) {
-        Title = title;
-        Desc = desc;
+        this.title = title;
+        this.desc = desc;
     }
 
     public int getId() {
@@ -24,18 +24,18 @@ public class Note {
     }
 
     public String getTitle() {
-        return Title;
+        return title;
     }
 
     public void setTitle(String title) {
-        Title = title;
+        this.title = title;
     }
 
     public String getDesc() {
-        return Desc;
+        return desc;
     }
 
     public void setDesc(String desc) {
-        Desc = desc;
+        this.desc = desc;
     }
 }
