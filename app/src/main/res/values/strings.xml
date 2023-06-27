@@ -9,4 +9,5 @@
     <string name="add_note_text">Add New \nNote</string>
     <string name="floating_button_desc">floating button</string>
     <string name="main_slogon">Take Notes \nDaily</string>
+    <string name="main_heading">Daily Notes</string>
 </resources>
